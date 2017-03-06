@@ -21,7 +21,7 @@ public class Driver {
 
         try {
             primary.join();
-            if (Adjudicator.acceptanceTest(fileIn, fileOut)) {
+            if (Adjudicator.testPasses(fileIn, fileOut)) {
                 System.out.println("-primary variant passed\n");
                 return;
             } else {
@@ -38,7 +38,7 @@ public class Driver {
 
         try {
             backup.join();
-            if (Adjudicator.acceptanceTest(fileIn, fileOut)) {
+            if (Adjudicator.testPasses(fileIn, fileOut)) {
                 System.out.println("-backup variant passed\n");
                 return;
             } else {

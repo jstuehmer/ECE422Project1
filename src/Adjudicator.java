@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Adjudicator {
 
-    public static boolean acceptanceTest(String fileIn, String fileOut) {
+    public static boolean testPasses(String fileIn, String fileOut) {
 
         if (!FileHelper.fileExists(fileIn) || !FileHelper.fileExists(fileOut)) {
             return false;
