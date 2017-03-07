@@ -3,6 +3,7 @@
  * @author: Stuehmer
  */
 
+// Driver runs data sorter
 public class Driver {
 
     public static void main(String[] args) {
@@ -53,6 +54,7 @@ public class Driver {
             e.printStackTrace();
         }
 
+        // Delete output file if both variants fail
         FileHelper.deleteFile(fileOut);
     }
 }

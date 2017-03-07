@@ -13,6 +13,7 @@ public class HeapSort {
     private static int max;
     private static int memCount = 0;
 
+    // Perform sorting
     public static int[] sort(int[] a) {
 
         values = a;
@@ -29,6 +30,7 @@ public class HeapSort {
         return values;
     }
 
+    // Put values in heap order
     private static void heapify(int[] a) {
         n = a.length - 1;
         memCount += 1;
@@ -58,6 +60,7 @@ public class HeapSort {
         }
     }
 
+    // Swap a[i] and a[j]
     private static void swap(int[] a, int i, int j) {
         int tmp = a[i];
         a[i] = a[j];

@@ -6,6 +6,7 @@ import java.util.Random;
  * @author: Stuehmer
  */
 
+// Generate a file of random integers
 public class DataGenerator {
 
     public static void main(String[] args) {

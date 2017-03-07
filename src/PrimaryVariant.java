@@ -5,6 +5,7 @@ import java.util.Timer;
  * @author: Stuehmer
  */
 
+// Primary variant runs a heap sort, implemented in Java
 public class PrimaryVariant extends Thread {
 
     private int[] values;
@@ -29,6 +30,7 @@ public class PrimaryVariant extends Thread {
             HeapSort heapSort = new HeapSort();
             int[] result = heapSort.sort(values);
 
+            // Simulate a failure
             if (Failure.failOccurs(heapSort.getMemCount(), failProb)) {
                 t.cancel();
                 System.out.println("primary variant experienced a failure");

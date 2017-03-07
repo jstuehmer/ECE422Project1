@@ -5,9 +5,7 @@ import java.util.Arrays;
  * @author: Stuehmer
  */
 
-/*
- *
- */
+// Adjudicator compares two files for an acceptance test
 public class Adjudicator {
 
     public static boolean testPasses(String fileIn, String fileOut) {

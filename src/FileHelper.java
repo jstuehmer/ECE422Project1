@@ -8,6 +8,7 @@ import java.util.List;
  * @author: Stuehmer
  */
 
+// Class for passing & returning arrays to & from files
 public class FileHelper {
 
     public static int[] readFile(String fileName) {

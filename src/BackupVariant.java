@@ -6,6 +6,7 @@ import java.util.Arrays;
  * @author: Stuehmer
  */
 
+// Backup variant runs an insertion sort, implemented in C
 public class BackupVariant extends Thread {
 
     private int[] values;
@@ -31,6 +32,7 @@ public class BackupVariant extends Thread {
             System.loadLibrary("insertionsort");
             int[] result = insertionSort.insertsort(values);
 
+            // Simulate a failure
             if (Failure.failOccurs(insertionSort.getMemCount(), failProb)) {
                 t.cancel();
                 System.out.println("backup variant experienced a failure");
