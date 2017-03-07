@@ -1,3 +1,8 @@
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
 public class Driver {
 
     public static void main(String[] args) {
@@ -22,10 +27,10 @@ public class Driver {
         try {
             primary.join();
             if (Adjudicator.testPasses(fileIn, fileOut)) {
-                System.out.println("-primary variant passed\n");
+                System.out.println("primary variant passed\n");
                 return;
             } else {
-                System.out.println("-primary variant failed to pass adjudicator");
+                System.out.println("primary variant failed to pass adjudicator");
             }
 
         } catch (InterruptedException e) {
@@ -39,10 +44,10 @@ public class Driver {
         try {
             backup.join();
             if (Adjudicator.testPasses(fileIn, fileOut)) {
-                System.out.println("-backup variant passed\n");
+                System.out.println("backup variant passed\n");
                 return;
             } else {
-                System.out.println("-backup variant failed to pass adjudicator\n");
+                System.out.println("backup variant failed to pass adjudicator\n");
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

@@ -1,6 +1,11 @@
 import java.util.Arrays;
 import java.util.Random;
 
+/*
+ * Created on March 1, 2017
+ * @author: Stuehmer
+ */
+
 public class DataGenerator {
 
     public static void main(String[] args) {
@@ -21,7 +26,7 @@ public class DataGenerator {
         }
 
         FileHelper.writeFile(fileName, values);
-        System.out.println("-" + Integer.toString(numValues) +
-                           " values written to" + fileName + "\n");
+        System.out.println(Integer.toString(numValues) +
+                 " values written to " + fileName + "\n");
     }
 }

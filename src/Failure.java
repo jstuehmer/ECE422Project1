@@ -1,3 +1,8 @@
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
 public class Failure {
 
     public static boolean failOccurs(int memAccesses, double failProb) {

@@ -1,6 +1,11 @@
 import java.util.Timer;
 import java.util.Arrays;
 
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
 public class BackupVariant extends Thread {
 
     private int[] values;
@@ -15,7 +20,7 @@ public class BackupVariant extends Thread {
         this.fileOut = fileOut;
 
         t = new Timer();
-        Watchdog w = new Watchdog(this);
+        Watchdog w = new Watchdog(this, "backup variant");
         t.schedule(w, tLimit);
     }
 
@@ -28,7 +33,7 @@ public class BackupVariant extends Thread {
 
             if (Failure.failOccurs(insertionSort.getMemCount(), failProb)) {
                 t.cancel();
-                System.out.println("-backup variant experienced a failure");
+                System.out.println("backup variant experienced a failure");
                 return;
             }
 

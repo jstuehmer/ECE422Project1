@@ -3,6 +3,11 @@ import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.List;
 
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
 public class FileHelper {
 
     public static int[] readFile(String fileName) {

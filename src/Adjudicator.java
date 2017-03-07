@@ -1,5 +1,13 @@
 import java.util.Arrays;
 
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
+/*
+ *
+ */
 public class Adjudicator {
 
     public static boolean testPasses(String fileIn, String fileOut) {

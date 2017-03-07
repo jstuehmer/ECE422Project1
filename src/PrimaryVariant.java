@@ -1,5 +1,10 @@
 import java.util.Timer;
 
+/*
+ * Created on March 5, 2017
+ * @author: Stuehmer
+ */
+
 public class PrimaryVariant extends Thread {
 
     private int[] values;
@@ -14,7 +19,7 @@ public class PrimaryVariant extends Thread {
         this.fileOut = fileOut;
 
         t = new Timer();
-        Watchdog w = new Watchdog(this);
+        Watchdog w = new Watchdog(this, "primary variant");
         t.schedule(w, tLimit);
     }
 
@@ -26,7 +31,7 @@ public class PrimaryVariant extends Thread {
 
             if (Failure.failOccurs(heapSort.getMemCount(), failProb)) {
                 t.cancel();
-                System.out.println("-primary variant experienced a failure");
+                System.out.println("primary variant experienced a failure");
                 return;
             }
 
