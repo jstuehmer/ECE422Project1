@@ -2,10 +2,10 @@
 Project 1 for ECE 422
 
 To compile files:
-$ make
+	$ make
 
 To run Data Generator:
-$ make generator
+	$ make generator
 
 To run Data Sorter:
-$ make sorter
+	$ make sorter
